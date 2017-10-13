@@ -334,7 +334,7 @@ class KnackhqAuth(object):
         return KnackhqAuth.from_dict(load_js(abspath, enable_verbose=False))
 
     def get_delay(self):
-        return 1.0 + random.random()
+        return 1.0 + (random.randrange(0, 200, 1) / 1000.0)
 
     def sleep(self):
         print("sleeping during Knack request")
