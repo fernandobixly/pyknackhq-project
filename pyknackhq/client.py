@@ -9,7 +9,7 @@ import json
 import random
 from time import sleep
 
-MAX_RETRIES = 100
+MAX_RETRIES = 256
 random.seed()
 
 
